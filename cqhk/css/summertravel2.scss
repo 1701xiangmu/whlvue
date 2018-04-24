@@ -1,0 +1,326 @@
+@charset "utf-8";
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td{margin:0;padding:0;}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  display:block;
+}
+em,i{
+  font-style: normal;
+}
+input{
+  //display: block;
+  border:none;
+}
+b,strong{
+  font-weight: normal;
+}
+html,body{
+  width:100%;
+}
+$ziti-font-size:72px;
+html{
+  font-size:$ziti-font-size ;
+}
+@function pxZiti($px){
+  @return $px / $ziti-font-size * 1rem;
+}
+$browser-default-font-size: 7.2px !default;
+@function pxTorem($px){
+  @return $px / $browser-default-font-size * 1vw;
+}
+@font-face {font-family: 'iconfont';
+  src: url('../iconfont/iconfont.eot'); /* IE9*/
+  src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;}
+/*------summertravel-------------*/
+/*----------------header---------------*/
+#summertravel-header2{
+  width:100%;
+  height:pxTorem(86px);
+  background:#45c298;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999;
+  em{
+    font-size:pxTorem(38px) ;
+    color:white;
+  }
+  span{
+    font-size:pxTorem(38px) ;
+    color:white;
+  }
+  p{
+    width:pxTorem(48px);
+    height:pxTorem(54px);
+    img{
+      width:100%;
+      height:100%;
+    }
+  }
+}
+#summertravel-main{
+  width:100%;
+  height:100%;
+  background:#6cf2fd;
+  padding: 0 pxTorem(14px);
+  #summertravel-main-nav{
+    width: 100%;
+    height:pxTorem(128px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+      width: pxTorem(295px);
+      height:pxTorem(58px);
+      background:#88c22f;
+      text-align: center;
+      line-height:pxTorem(58px) ;
+      color:white;
+      font-size:pxTorem(32px) ;
+    }
+  }
+}
+
+#summertravel-list{
+  width:100%;
+  hieght:100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  .summertravel-list-dl{
+    width:pxTorem(330px);
+    hieght:pxTorem(290px);
+    margin-bottom:pxTorem(20px) ;
+    dt{
+      width:pxTorem(330px);
+      hieght:pxTorem(154px);
+      img{
+        display: block;
+        width:100%;
+        hieght:100%;
+      }
+    }
+    dd{
+      width:pxTorem(330px);
+      hieght:pxTorem(116px);
+      background: white;
+      .summertravel-div1{
+        width:pxTorem(330px);
+        hieght:pxTorem(52px);
+        display: flex;
+        align-items: center;
+        em{
+          font-size:pxZiti(26px);
+          color:#464646;
+        }
+        img{
+          width:pxTorem(38px);
+          hieght:pxTorem(26px);
+          margin:0  pxTorem(10px);
+        }
+        i{
+          font-size:pxZiti(26px) ;
+          color:#464646;
+        }
+      }
+      .summertravel-div2{
+        width:pxTorem(330px);
+        hieght:pxTorem(64px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        em{
+          font-size:pxZiti(20px) ;
+          color:orange;
+          b{
+            font-size:pxZiti(24px) ;
+            color:orange;
+          }
+        }
+        ul{
+          display: flex;
+          li{
+            width:pxTorem(98px);
+            hieght:pxTorem(56px);
+            background: #329e48;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left:pxTorem(5px);
+            a{
+              font-size:pxTorem(20px) ;
+              color:#ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*----------*/
+#summertravel-banner{
+  width: 100%;
+  height:pxTorem(274px);
+  .summertravel-banner-dl{
+    width: 100%;
+    height:pxTorem(274px);
+    dt{
+      width: 100%;
+      height:pxTorem(204px);
+      img{
+        width: 100%;
+        height:100%;
+      }
+    }
+    dd{
+      width:100%;
+      hieght:pxTorem(116px);
+      background: white;
+      .summertravel-dd-div1{
+        width:100%;
+        hieght:pxTorem(52px);
+        display: flex;
+        align-items: center;
+        em{
+          font-size:pxZiti(26px);
+          color:#464646;
+        }
+        img{
+          width:pxTorem(38px);
+          hieght:pxTorem(26px);
+          margin:0  pxTorem(10px);
+        }
+        i{
+          font-size:pxZiti(26px) ;
+          color:#464646;
+        }
+      }
+      .summertravel-dd-div2{
+        width:100%;
+        hieght:pxTorem(64px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        em{
+          font-size:pxZiti(20px) ;
+          color:orange;
+          b{
+            font-size:pxZiti(24px) ;
+            color:orange;
+          }
+        }
+        ul{
+          display: flex;
+          li{
+            width:pxTorem(98px);
+            hieght:pxTorem(56px);
+            background: #329e48;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left:pxTorem(5px);
+            a{
+              font-size:pxTorem(20px) ;
+              color:#ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.summertravel-title{
+  width: 100%;
+  height:pxTorem(122px);
+  background: #b0f4f7;
+  display: flex;
+  align-items: center;
+  position: relative;
+  p{
+    width:pxTorem(186px);
+    height:pxTorem(54px);
+    background: orange;
+    border-radius: pxTorem(8px);
+    font-size:pxZiti(28px) ;
+    color:white;
+    text-align: center;
+    line-height:pxTorem(54px) ;
+    position: absolute;
+    left:pxTorem(-14px);
+  }
+}
+/*------------*/
+.summertravel-nav3{
+  width:100%;
+  background: #b0f4f7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  .summertravel-nav3Div{
+    margin-top:pxTorem(35px);
+    display: flex;
+    margin-left: 2.5%;
+    margin-bottom:pxTorem(30px) ;
+    em{
+      font-size:pxZiti(24px);
+      color:#838383;
+    }
+    i{
+      font-size:pxZiti(36px) ;
+      color:#838383;
+      margin:0 pxTorem(12px);
+    }
+    span{
+      font-size:pxZiti(24px);
+      color:#838383;
+    }
+  }
+  strong{
+    font-size:pxZiti(26px);
+    color:#adadad;
+    margin-right: pxTorem(12px);
+    b{
+      font-size:pxZiti(30px);
+      color:#ffa14b;
+    }
+  }
+  .summertravel-nav3Div2{
+    margin-right: 2.5%;
+    display: flex;
+
+    p{
+      width:pxTorem(130px);
+      height:pxTorem(58px);
+      background: #9fd36e;
+      border-radius: pxTorem(8px);
+      font-size:pxZiti(28px) ;
+      color:white;
+      text-align: center;
+      line-height:pxTorem(58px) ;
+    }
+  }
+}

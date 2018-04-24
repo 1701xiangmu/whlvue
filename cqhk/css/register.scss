@@ -1,0 +1,227 @@
+@charset "utf-8";
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td{margin:0;padding:0;}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  display:inline-block;
+}
+em,i{
+  font-style: normal;
+}
+input{
+  //display: block;
+  border:none;
+}
+b,strong{
+  font-weight: normal;
+}
+html,body{
+  width:100%;
+}
+$browser-default-font-size: 72px !default;
+html{
+  font-size: $browser-default-font-size;
+}
+@function pxTorem($px){
+  @return $px / $browser-default-font-size * 1rem;
+}
+@font-face {font-family: 'iconfont';
+  src: url('../iconfont/iconfont.eot'); /* IE9*/
+  src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;}
+/*-------------service-header------------*/
+#register-header{
+  width:100%;
+  height:pxTorem(90px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #44c293;
+  z-index: 999;
+  span{
+    font-size:pxTorem(34px) ;
+    color:white;
+  }
+  p{
+    font-size:pxTorem(34px) ;
+    color:white;
+  }
+  em{
+    font-size:pxTorem(34px) ;
+    color:white;
+  }
+}
+/*-------nav-----*/
+#register-nav{
+  width:100%;
+  padding: 0 2.5%;
+  height:pxTorem(100px);
+  background:#cbcbcb;
+  .register-navul{
+    width:100%;
+    height:pxTorem(100px);
+    display: flex;
+    align-items: center;
+    li{
+      text-align: center;
+      line-height:pxTorem(60px) ;
+      width: 50%;
+      height:pxTorem(60px);
+      border:1px solid #333333;
+      a{
+        color:black;
+        font-size:pxTorem(32px) ;
+      }
+    }
+    li:nth-child(1){
+      background: orange;
+      a{
+        color: white;
+      }
+    }
+  }
+  table{
+    width:100%;
+    height:pxTorem(240px);
+    overflow: hidden;
+    border-top:1px solid #cbcbcb;
+    border-bottom:1px solid #cbcbcb;
+    tr:nth-child(1){
+      height:pxTorem(120px);
+      border-bottom:1px solid #cbcbcb;
+    }
+    tr:nth-child(2){
+      height:pxTorem(120px);
+      td:nth-child(2){
+        position: relative;
+        span{
+          position: absolute;
+          right:0;
+          top:50%;
+          margin-top:pxTorem(-30px);
+          display: block;
+          width:40%;
+          text-align: center;
+          line-height:pxTorem(60px) ;
+          height:pxTorem(60px);
+          background: blue;
+          font-size:pxTorem(30px);
+          color:white;
+        }
+      }
+    }
+}
+}
+/*--------btn------*/
+#register-btn{
+  width:100%;
+  height:pxTorem(280px);
+  background: #cbcbcb;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    width:70%;
+    height:pxTorem(80px);
+    background: orange;
+    text-align: center;
+    line-height:pxTorem(80px) ;
+    font-size:pxTorem(32px);
+    color:white;
+  }
+}
+
+#register-p{
+  width:100%;
+  height:pxTorem(380px);
+  background: #cbcbcb;
+}
+#register-div{
+  width: 100%;
+  height:pxTorem(36px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  p:after{
+    content: '';
+    display: block;
+    width:30%;
+    height:1px;
+    background: black;
+    position: absolute;
+    left:70%;
+    top:50%;
+  }
+  p:before{
+    content: '';
+    display: block;
+    width:30%;
+    height:1px;
+    background: black;
+    position: absolute;
+    left:0;
+    top:50%;
+
+  }
+}
+/*------*/
+#footer{
+  width:100%;
+  height:pxTorem(200px);
+  .footer-ul{
+    width:100%;
+    height:pxTorem(200px);
+    display: flex;
+    justify-content:space-between;
+    li{
+      width:33%;
+      height:pxTorem(200px);
+      text-align: center;
+      i{
+        display: block;
+        margin-top:pxTorem(20px) ;
+        font-size:pxTorem(80px) ;
+      }
+      span{
+        font-size:pxTorem(24px) ;
+        color:black;
+      }
+    }
+    li:nth-child(1){
+      i{
+        color:#1a9bdd;
+      }
+    }
+    li:nth-child(2){
+      i{
+        color:blue;
+      }
+    }
+    li:nth-child(3){
+      i{
+        color:#1e9306;
+      }
+    }
+  }
+}

@@ -1,0 +1,657 @@
+@charset "utf-8";
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td{margin:0;padding:0;}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  display:inline-block;
+}
+em,i{
+  font-style: normal;
+}
+input{
+  border:none;
+}
+b,strong{
+  font-weight: normal;
+}
+html,body{
+  width:100%;
+}
+$browser-default-font-size: 7.2px !default;
+//html{
+//  font-size: $browser-default-font-size;
+//}
+@function pxTorem($px){
+  @return $px / $browser-default-font-size * 1vw;
+}
+@font-face {font-family: 'iconfont';
+  src: url('../iconfont/iconfont.eot'); /* IE9*/
+  src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;}
+/*----------------header---------------*/
+#productdetails-header{
+  width:100%;
+  height:pxTorem(86px);
+  background:#45c298;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999;
+  em{
+    font-size:pxTorem(38px) ;
+    color:white;
+  }
+  span{
+    font-size:pxTorem(38px) ;
+    color:white;
+  }
+}
+
+/*--------------------------------*/
+#productdetails-banner{
+  position: relative;
+  width:100%;
+  height:100%;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: pxTorem(36px);
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height:100%;
+}
+.swiper-pagination-total{
+  color:white;
+  font-size:pxTorem(36px) ;
+}
+.swiper-pagination-current{
+  color:white;
+  font-size:pxTorem(36px) ;
+}
+#Btn{
+  color:white;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, #Btn {
+  bottom: 50px;
+  right: 30%;
+  width: 40%;
+}
+
+.swiper-pagination {
+  position: absolute;
+  //text-align: center;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  z-index: 10;
+}
+
+
+
+.swiper-slide {
+  width: 100%;
+  height:pxTorem(396px);
+  text-align: center;
+  font-size: pxTorem(18px);
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  img{
+    width:100%;
+    height:100%;
+  }
+}
+#productdetails-seaction{
+  width:100%;
+  height:pxTorem(264px);
+  padding:0  4.16%;
+  padding-top:pxTorem(30px);
+  p{
+    width:100%;
+    height:pxTorem(70px);
+    overflow: hidden;
+    font-size:pxTorem(28px) ;
+    color:#393939;
+  }
+  .productdetails-div{
+    display: flex;
+    align-items: center;
+    em{
+      font-size:pxTorem(36px) ;
+      color:#ed5f5e;
+      margin-right:3%;
+    }
+    i{
+      display:block;
+      border:1px solid #d3aa8e;
+      font-size:pxTorem(20px);
+      text-align: center;
+      line-height: pxTorem(32px);
+      width:pxTorem(172px);
+      height:pxTorem(32px);
+      color:#d3aa8e;
+      margin-left:3%;
+    }
+  }
+  .productdetails-ul{
+    display: flex;
+    li{
+      border:1px solid #d3aa8e;
+      width:pxTorem(195px);
+      height:pxTorem(32px);
+      color:#d3aa8e;
+      margin-right: 3%;
+      text-align: center;
+      line-height:pxTorem(32px) ;
+    }
+  }
+  b{
+    display: block;
+    border:1px solid #d3aa8e;
+    width:pxTorem(195px);
+    height:pxTorem(32px);
+    color:#d3aa8e;
+    margin-right: 3%;
+    text-align: center;
+    line-height:pxTorem(32px) ;
+    margin-top:pxTorem(10px);
+  }
+}
+#productdetails-title{
+  width:100%;
+  height:pxTorem(130px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top:1px solid #b4b4b4;
+  p{
+    width: 90%;
+    font-size:pxTorem(24px) ;
+    color:#393939;
+    position: relative;
+    em{
+      position: absolute;
+      right:0;
+      top:50%;
+    }
+  }
+}
+
+/*---------------------*/
+.productdetails-date{
+  width:100%;
+  height:pxTorem(83px);
+  display: flex;
+  padding: 0 5%;
+  justify-content: space-between;
+  align-items: center;
+  .productdetails-div1{
+    display: flex;
+    align-items: center;
+    img{
+      width:pxTorem(30px);
+      height:pxTorem(30px);
+    }
+    p{
+      margin-left:15%;
+      font-size:pxTorem(28px) ;
+      white-space: nowrap;
+    }
+  }
+  .productdetails-div2{
+    span{
+      font-size:pxTorem(28px) ;
+      color:#0bca97;
+    }
+    em{
+      font-size:pxTorem(28px) ;
+      color:#0bca97;
+    }
+    i{
+      font-size:pxTorem(28px) ;
+      color:#333333;
+    }
+    b{
+      font-size:pxTorem(20px) ;
+      color:#9e9e9e;
+    }
+  }
+}
+.productdetails-nav{
+  width:100%;
+  height:pxTorem(150px);
+  padding-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  .productdetails-nav-div{
+    width:40%;
+    display: flex;
+    justify-content: space-between;
+    span{
+      display: block;
+      height:pxTorem(40px);
+      line-height:pxTorem(40px) ;
+      font-size:pxTorem(24px) ;
+      margin-right:12.78% ;
+      color:#c7c7c7;
+    }
+    p{
+      width:pxTorem(105px);
+      height:pxTorem(40px);
+      border:1px solid #9e9e9e;
+      text-align: center;
+      line-height:pxTorem(40px) ;
+      font-size:pxTorem(24px) ;
+    }
+  }
+.productdetails-nav-div2{
+  width:35%;
+  display: flex;
+  justify-content: space-between;
+  em{
+    display: block;
+    height:pxTorem(40px);
+    line-height:pxTorem(40px) ;
+    margin-left: 11.5%;
+    font-size:pxTorem(24px) ;
+    margin-right:12.78% ;
+    color:#c7c7c7;
+    white-space: nowrap;
+  }
+  i{
+    display: block;
+    width:pxTorem(105px);
+    height:pxTorem(40px);
+    border:1px solid #9e9e9e;
+    text-align: center;
+    line-height:pxTorem(40px) ;
+    font-size:pxTorem(24px) ;
+  }
+}
+}
+/*---------分割框-----*/
+.productdetails-box{
+  width: 100%;
+  height:pxTorem(25px);
+  background:#f0f4f7;
+}
+/*------productdetails-nav-------*/
+#productdetails-nav{
+  width:100%;
+  height:pxTorem(74px);
+  border-bottom: 1px solid #9e9e9e;
+  .productdetails-nav-ul{
+    width:100%;
+    height:pxTorem(74px);
+    display: flex;
+    li{
+      width:33.3%;
+      height:pxTorem(74px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      a{
+        font-size:pxTorem(24px) ;
+        color:#414141;
+      }
+      span{
+        position: absolute;
+        right:0;
+        font-size:pxTorem(24px) ;
+        color:#f1f1f1;
+      }
+    }
+    li:nth-child(1){
+      border-bottom:pxTorem(2px) solid #0bca97;
+      a{
+        color:#0bca97;
+      }
+    }
+  }
+}
+/*--------行程介绍-------*/
+#productdetails-main{
+  width:100%;
+  height:100%;
+  padding: 0 4.17%;
+  padding-top:pxTorem(35px) ;
+  h5{
+    font-size:pxTorem(28px);
+    color:#333333;
+  }
+  span{
+    margin-top:pxTorem(30px) ;
+    display: block;
+    font-size:pxTorem(24px);
+    color:#969696;
+  }
+  .productdetails-main-div{
+    margin-top:pxTorem(9px) ;
+    display: flex;
+    align-items: center;
+    img{
+      width:pxTorem(25px);
+      height:pxTorem(25px);
+    }
+    em{
+      margin-left:2%;
+      font-size:pxTorem(22px);
+      color:#969696;
+    }
+  }
+  .productdetails-main-div2{
+    display: flex;
+    align-items: center;
+    img{
+      width:pxTorem(25px);
+      height:pxTorem(25px);
+    }
+    em{
+      margin-left:2%;
+      font-size:pxTorem(22px);
+      color:#969696;
+    }
+  }
+  i{
+    margin-top:pxTorem(13px) ;
+    display: block;
+    font-size:pxTorem(22px);
+    color:#969696;
+  }
+  p{
+    margin-top:pxTorem(30px);
+    font-size:pxTorem(22px);
+    color:#969696;
+  }
+}
+/*--------行程介绍-------*/
+.productdetails-main{
+  width:100%;
+  height:100%;
+  padding: 0 4.17%;
+  padding-top:pxTorem(35px) ;
+  h5{
+    font-size:pxTorem(28px);
+    color:#333333;
+  }
+  span{
+    margin-top:pxTorem(30px) ;
+    display: block;
+    font-size:pxTorem(24px);
+    color:#969696;
+  }
+  .productdetails-main-div{
+    margin-top:pxTorem(9px) ;
+    display: flex;
+    align-items: center;
+    img{
+      width:pxTorem(25px);
+      height:pxTorem(25px);
+    }
+    em{
+      margin-left:2%;
+      font-size:pxTorem(22px);
+      color:#969696;
+    }
+  }
+  .productdetails-main-div2{
+    display: flex;
+    align-items: center;
+    img{
+      width:pxTorem(25px);
+      height:pxTorem(25px);
+    }
+    em{
+      margin-left:2%;
+      font-size:pxTorem(22px);
+      color:#969696;
+    }
+  }
+  i{
+    margin-top:pxTorem(13px) ;
+    display: block;
+    font-size:pxTorem(22px);
+    color:#969696;
+  }
+  p{
+    margin-top:pxTorem(30px);
+    font-size:pxTorem(22px);
+    color:#969696;
+  }
+  b{
+    font-size:pxTorem(22px);
+    color:#969696;
+  }
+}
+#productdetails-main-list{
+  width:100%;
+  height:pxTorem(140px);
+  padding: 0 4.17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    width:pxTorem(244px);
+    height:pxTorem(54px);
+    border:1px solid #0bca97;
+    text-align: center;
+    line-height:pxTorem(54px) ;
+    font-size:pxTorem(28px) ;
+    color:#0bca97;
+  }
+}
+
+#productdetails-tuijian{
+  width:100%;
+  height:pxTorem(94px);
+  background:#f0f4f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    font-size:pxTorem(24px) ;
+    color:#b4b4b4;
+  }
+}
+/*-----景区展示---*/
+#productdetailsList{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  padding-top:pxTorem(30px) ;
+  dl{
+    width: 44.4%;
+    height:pxTorem(370px);
+    dt{
+      width: 100%;
+      height:pxTorem(230px);
+      img{
+        width: 100%;
+        height:100%;
+      }
+    }
+    dd{
+      width: 100%;
+      height:pxTorem(140px);
+      p{
+        width: 100%;
+        height:pxTorem(68px);
+        font-size:pxTorem(26px) ;
+        color:#555555;
+        overflow: hidden;
+      }
+      .productdetailsList-div{
+        width: 100%;
+        height:pxTorem(72px);
+        line-height:pxTorem(72px) ;
+        font-size:pxTorem(24px) ;
+        color:#555555;
+        em{
+          font-size:pxTorem(28px) ;
+          color:#ffbbc8;
+        }
+        span{
+          font-size:pxTorem(24px) ;
+          color:#555555;
+          margin:0 3%;
+        }
+        i{
+          font-size:pxTorem(24px) ;
+          color:#555555;
+        }
+      }
+    }
+  }
+}
+.productdetailsList-div{
+  width: 100%;
+  height:pxTorem(115px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    font-size:pxTorem(28px) ;
+    color:#e1e1e1;
+  }
+}
+/*---------*/
+#productdetails-xingcheng{
+  width: 100%;
+  height:pxTorem(102px);
+  display: flex;
+  padding: 0 4.17%;
+  justify-content: space-between;
+  align-items: center;
+  img{
+    width: pxTorem(36px);
+    height:pxTorem(36px);
+  }
+  .productdetails-xingcheng-div{
+    width:47%;
+    height:pxTorem(60px);
+    display: flex;
+    flex-direction: column;
+    span{
+      font-size:pxTorem(20px) ;
+      color:#e2d9c8;
+    }
+    em{
+      font-size:pxTorem(20px) ;
+      color:#e2d9c8;
+    }
+  }
+  p{
+    width: pxTorem(162px);
+    height:pxTorem(62px);
+    text-align: center;
+    line-height:pxTorem(62px) ;
+    border:1px solid #e2d9c8;
+    color:#e2d9c8;
+  }
+}
+#productdetails-box{
+  width:100%;
+  height:pxTorem(164px);
+  background:#f0f4f7;
+}
+/*-----------footer---*/
+#productdetails-footer{
+  width:100%;
+  height:pxTorem(84px);
+ ul{
+   width:100%;
+   height:pxTorem(84px);
+   display: flex;
+   li:nth-child(1){
+     width:25%;
+     height:pxTorem(84px);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     a{
+      text-align: center;
+       text-decoration: none;
+       color: #6f6f6f;
+       i{
+         font-size:pxTorem(28px) ;
+       }
+       span{
+         font-size:pxTorem(24px) ;
+       }
+     }
+   }
+   li:nth-child(2){
+     width:25%;
+     height:pxTorem(84px);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     a{
+       text-align: center;
+       color: #6f6f6f;
+       i{
+         font-size:pxTorem(28px) ;
+       }
+       span{
+         font-size:pxTorem(24px) ;
+       }
+     }
+   }
+   li:nth-child(3){
+     width:50%;
+     height:pxTorem(84px);
+     background:#ff8844;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     a{
+       color:white;
+       font-size:pxTorem(30px) ;
+     }
+   }
+ }
+
+}

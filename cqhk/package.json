@@ -1,0 +1,14 @@
+{
+  "name": "qjdsa",
+  "version": "1.0.0",
+  "description": "ahdjka",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "daa",
+  "license": "ISC",
+  "dependencies": {
+    "reactjs-iscroll": "^0.3.2"
+  }
+}

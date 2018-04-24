@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select, td {
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  display: block; }
+
+em, i {
+  font-style: normal; }
+
+input {
+  border: none; }
+
+b, strong {
+  font-weight: normal; }
+
+html, body {
+  width: 100%; }
+
+html {
+  font-size: 72px; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../iconfont/iconfont.eot");
+  /* IE9*/
+  src: url("../iconfont/iconfont.eot?#iefix") format("embedded-opentype"), url("../iconfont/iconfont.woff") format("woff"), url("../iconfont/iconfont.ttf") format("truetype"), url("../iconfont/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*------summertravel-------------*/
+/*----------------header---------------*/
+#summertravel-header2 {
+  width: 100%;
+  height: 11.94444vw;
+  background: #45c298;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999; }
+  #summertravel-header2 em {
+    font-size: 5.27778vw;
+    color: white; }
+  #summertravel-header2 span {
+    font-size: 5.27778vw;
+    color: white; }
+  #summertravel-header2 p {
+    width: 6.66667vw;
+    height: 7.5vw; }
+    #summertravel-header2 p img {
+      width: 100%;
+      height: 100%; }
+
+#summertravel-main {
+  width: 100%;
+  height: 100%;
+  background: #6cf2fd;
+  padding: 0 1.94444vw; }
+  #summertravel-main #summertravel-main-nav {
+    width: 100%;
+    height: 17.77778vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #summertravel-main #summertravel-main-nav p {
+      width: 40.97222vw;
+      height: 8.05556vw;
+      background: #88c22f;
+      text-align: center;
+      line-height: 8.05556vw;
+      color: white;
+      font-size: 4.44444vw; }
+
+#summertravel-list {
+  width: 100%;
+  hieght: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between; }
+  #summertravel-list .summertravel-list-dl {
+    width: 45.83333vw;
+    hieght: 40.27778vw;
+    margin-bottom: 2.77778vw; }
+    #summertravel-list .summertravel-list-dl dt {
+      width: 45.83333vw;
+      hieght: 21.38889vw; }
+      #summertravel-list .summertravel-list-dl dt img {
+        display: block;
+        width: 100%;
+        hieght: 100%; }
+    #summertravel-list .summertravel-list-dl dd {
+      width: 45.83333vw;
+      hieght: 16.11111vw;
+      background: white; }
+      #summertravel-list .summertravel-list-dl dd .summertravel-div1 {
+        width: 45.83333vw;
+        hieght: 7.22222vw;
+        display: flex;
+        align-items: center; }
+        #summertravel-list .summertravel-list-dl dd .summertravel-div1 em {
+          font-size: 0.36111rem;
+          color: #464646; }
+        #summertravel-list .summertravel-list-dl dd .summertravel-div1 img {
+          width: 5.27778vw;
+          hieght: 3.61111vw;
+          margin: 0 1.38889vw; }
+        #summertravel-list .summertravel-list-dl dd .summertravel-div1 i {
+          font-size: 0.36111rem;
+          color: #464646; }
+      #summertravel-list .summertravel-list-dl dd .summertravel-div2 {
+        width: 45.83333vw;
+        hieght: 8.88889vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        #summertravel-list .summertravel-list-dl dd .summertravel-div2 em {
+          font-size: 0.27778rem;
+          color: orange; }
+          #summertravel-list .summertravel-list-dl dd .summertravel-div2 em b {
+            font-size: 0.33333rem;
+            color: orange; }
+        #summertravel-list .summertravel-list-dl dd .summertravel-div2 ul {
+          display: flex; }
+          #summertravel-list .summertravel-list-dl dd .summertravel-div2 ul li {
+            width: 13.61111vw;
+            hieght: 7.77778vw;
+            background: #329e48;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0.69444vw; }
+            #summertravel-list .summertravel-list-dl dd .summertravel-div2 ul li a {
+              font-size: 2.77778vw;
+              color: #ffffff; }
+
+/*----------*/
+#summertravel-banner {
+  width: 100%;
+  height: 38.05556vw; }
+  #summertravel-banner .summertravel-banner-dl {
+    width: 100%;
+    height: 38.05556vw; }
+    #summertravel-banner .summertravel-banner-dl dt {
+      width: 100%;
+      height: 28.33333vw; }
+      #summertravel-banner .summertravel-banner-dl dt img {
+        width: 100%;
+        height: 100%; }
+    #summertravel-banner .summertravel-banner-dl dd {
+      width: 100%;
+      hieght: 16.11111vw;
+      background: white; }
+      #summertravel-banner .summertravel-banner-dl dd .summertravel-dd-div1 {
+        width: 100%;
+        hieght: 7.22222vw;
+        display: flex;
+        align-items: center; }
+        #summertravel-banner .summertravel-banner-dl dd .summertravel-dd-div1 em {
+          font-size: 0.36111rem;
+          color: #464646; }
+        #summertravel-banner .summertravel-banner-dl dd .summertravel-dd-div1 img {
+          width: 5.27778vw;
+          hieght: 3.61111vw;
+          margin: 0 1.38889vw; }
+        #summertravel-banner .summertravel-banner-dl dd .summertravel-dd-div1 i {
+          font-size: 0.36111rem;
+          color: #464646; }
+      #summertravel-banner .summertravel-banner-dl dd .summertravel-dd-div2 {
+        width: 100%;
+        hieght: 8.88889vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        #summertravel-banner .summertravel-banner-dl dd .summertravel-dd-div2 em {
+          font-size: 0.27778rem;
+          color: orange; }
+          #summertravel-banner .summertravel-banner-dl dd .summertravel-dd-div2 em b {
+            font-size: 0.33333rem;
+            color: orange; }
+        #summertravel-banner .summertravel-banner-dl dd .summertravel-dd-div2 ul {
+          display: flex; }
+          #summertravel-banner .summertravel-banner-dl dd .summertravel-dd-div2 ul li {
+            width: 13.61111vw;
+            hieght: 7.77778vw;
+            background: #329e48;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0.69444vw; }
+            #summertravel-banner .summertravel-banner-dl dd .summertravel-dd-div2 ul li a {
+              font-size: 2.77778vw;
+              color: #ffffff; }
+
+.summertravel-title {
+  width: 100%;
+  height: 16.94444vw;
+  background: #b0f4f7;
+  display: flex;
+  align-items: center;
+  position: relative; }
+  .summertravel-title p {
+    width: 25.83333vw;
+    height: 7.5vw;
+    background: orange;
+    border-radius: 1.11111vw;
+    font-size: 0.38889rem;
+    color: white;
+    text-align: center;
+    line-height: 7.5vw;
+    position: absolute;
+    left: -1.94444vw; }
+
+/*------------*/
+.summertravel-nav3 {
+  width: 100%;
+  background: #b0f4f7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  .summertravel-nav3 .summertravel-nav3Div {
+    margin-top: 4.86111vw;
+    display: flex;
+    margin-left: 2.5%;
+    margin-bottom: 4.16667vw; }
+    .summertravel-nav3 .summertravel-nav3Div em {
+      font-size: 0.33333rem;
+      color: #838383; }
+    .summertravel-nav3 .summertravel-nav3Div i {
+      font-size: 0.5rem;
+      color: #838383;
+      margin: 0 1.66667vw; }
+    .summertravel-nav3 .summertravel-nav3Div span {
+      font-size: 0.33333rem;
+      color: #838383; }
+  .summertravel-nav3 strong {
+    font-size: 0.36111rem;
+    color: #adadad;
+    margin-right: 1.66667vw; }
+    .summertravel-nav3 strong b {
+      font-size: 0.41667rem;
+      color: #ffa14b; }
+  .summertravel-nav3 .summertravel-nav3Div2 {
+    margin-right: 2.5%;
+    display: flex; }
+    .summertravel-nav3 .summertravel-nav3Div2 p {
+      width: 18.05556vw;
+      height: 8.05556vw;
+      background: #9fd36e;
+      border-radius: 1.11111vw;
+      font-size: 0.38889rem;
+      color: white;
+      text-align: center;
+      line-height: 8.05556vw; }
+
+/*# sourceMappingURL=summertravel2.css.map */
